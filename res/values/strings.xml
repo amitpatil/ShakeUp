@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, Testing!</string>
-    <string name="app_name">HelloAndroid</string>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">ShakeUp</string>
+    
+    <string name="start">Start</string>
+    <string name="taskTitle_train">Ninja Training</string>
+    <string name="taskDesc_desc">Your task is to shake your phone as many times possible in 10 seconds.  Good luck grasshopper.</string>
+    <color name="black">#000000</color>
 
 </resources>

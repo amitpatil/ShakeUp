@@ -1,30 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <TextView
-        android:id="@+id/label"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Type here:"/>
-    <EditText
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+<TextView
+android:paddingTop="20dip"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:textSize="16sp"
+android:textStyle="bold"
+android:gravity="center"
+android:text="Shaker Demo"/>
+<EditText
         android:id="@+id/entry"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/editbox_background"
-        android:layout_below="@id/label"/>
-    <Button
-        android:id="@+id/ok"
+        
+/>
+<Button
+        android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/entry"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="10dip"
-        android:text="OK" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/ok"
-        android:layout_alignTop="@id/ok"
-        android:text="Cancel" />
-</RelativeLayout>
+        android:text="Clear" />
+
+<!-- 
+<TableLayout
+android:paddingTop="10dip"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:stretchColumns="*">
+<TableRow>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="14sp"
+android:text="X-Axis"
+android:gravity="center"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:textSize="14sp" 
+android:text="Y-Axis" 
+android:gravity="center"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="14sp"
+android:text="Z-Axis"
+android:gravity="center"/>
+</TableRow>
+<TableRow>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/x_axis"
+android:gravity="center"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/y_axis"
+android:gravity="center"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/z_axis"
+android:gravity="center"/>
+</TableRow>
+</TableLayout>
+<ImageView
+android:paddingTop="10dip"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/image"
+android:layout_gravity="center"
+android:visibility="invisible"/>
+ -->
+
+<ImageView
+    android:id="@+id/image1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/avatar_default_big" 
+/>
+
+<ImageView
+    android:id="@+id/image2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/avatar_default_big" />
+
+</LinearLayout>
