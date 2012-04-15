@@ -19,13 +19,13 @@ public class ShakeEventListner implements SensorEventListener {
    * Minimum times in a shake gesture that the direction of movement needs to
    * change.
    */
-  private static final int MIN_DIRECTION_CHANGE = 3;
+  private static final int MIN_DIRECTION_CHANGE = 2;
 
   /** Maximum pause between movements. */
-  private static final int MAX_PAUSE_BETHWEEN_DIRECTION_CHANGE = 200;
+  private static final int MAX_PAUSE_BETHWEEN_DIRECTION_CHANGE = 500;
 
   /** Maximum allowed time for shake gesture. */
-  private static final int MAX_TOTAL_DURATION_OF_SHAKE = 800;
+  private static final int MAX_TOTAL_DURATION_OF_SHAKE = 3000;
 
   /** Time when the gesture started. */
   private long mFirstDirectionChangeTime = 0;

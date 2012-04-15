@@ -43,38 +43,34 @@ public class Main extends Activity
               final EditText ET = (EditText) findViewById(R.id.entry);
               ET.setText(""+count);
               
-              ImageView iv1 = (ImageView) findViewById(R.id.image1);
-              ImageView iv2 = (ImageView) findViewById(R.id.image2);
-              if((count%2) == 0)
-              {    
-                  iv1.setVisibility(View.INVISIBLE);
-                  iv2.setVisibility(View.VISIBLE);
-              }
-              else
-              {    
-                  iv1.setVisibility(View.VISIBLE);
-                  iv2.setVisibility(View.INVISIBLE);
-              }    
+//              ImageView iv = (ImageView) findViewById(R.id.image);
+//              
+//              if((count%2) == 0)
+//              {    
+//                  iv.setImageResource(R.drawable.ninja01);
+//              }
+//              else
+//              {    
+//                  iv.setImageResource(R.drawable.ninja02);
+//              }    
           }
         });
         
       
-        ImageView iv2 = (ImageView) findViewById(R.id.image2);
-        iv2.setVisibility(View.INVISIBLE);
-        final EditText ET = (EditText) findViewById(R.id.entry);
-        Button B1 = (Button) findViewById(R.id.clear);
-        B1.setOnClickListener(new View.OnClickListener() {
-
-                        @Override
-                        public void onClick(View v) {
-                            //count=0;
-                            Intent goToNextActivity = new Intent(getApplicationContext(), Test.class);
-                            /*Sending some arguments*/ 
-                            Bundle bundle = new Bundle();
-                            bundle.putString("count",""+count );
-                            goToNextActivity.putExtras(bundle);
-                            startActivity(goToNextActivity);
-                        } });
+//        final EditText ET = (EditText) findViewById(R.id.entry);
+//        Button B1 = (Button) findViewById(R.id.clear);
+//        B1.setOnClickListener(new View.OnClickListener() {
+//
+//                        @Override
+//                        public void onClick(View v) {
+//                            //count=0;
+//                            Intent goToNextActivity = new Intent(getApplicationContext(), Test.class);
+//                            /*Sending some arguments*/ 
+//                            Bundle bundle = new Bundle();
+//                            bundle.putString("count",""+count );
+//                            goToNextActivity.putExtras(bundle);
+//                            startActivity(goToNextActivity);
+//                        } });
         
         gameTimer = new GameTimer(this);
         

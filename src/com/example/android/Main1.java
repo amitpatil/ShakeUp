@@ -39,13 +39,13 @@ public class Main1 extends Activity implements SensorEventListener
         mSensorManager.registerListener(this, mAccelerometer,
                 SensorManager.SENSOR_DELAY_NORMAL);
         final EditText ET = (EditText) findViewById(R.id.entry);
-        Button B1 = (Button) findViewById(R.id.clear);
-        B1.setOnClickListener(new View.OnClickListener() {
-
-                        @Override
-                        public void onClick(View v) {
-                            count=0;
-                        } });
+//        Button B1 = (Button) findViewById(R.id.clear);
+//        B1.setOnClickListener(new View.OnClickListener() {
+//
+//                        @Override
+//                        public void onClick(View v) {
+//                            count=0;
+//                        } });
     }
 
     @Override
